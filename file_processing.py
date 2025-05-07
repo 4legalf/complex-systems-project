@@ -6,11 +6,20 @@ from pydmd import DMD
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
+from scipy.signal import detrend
+from sklearn.preprocessing import StandardScaler
+from scipy.signal import butter, filtfilt
 
 data_path = 'datasets/antidepressant-study'
 output_arr = 'output/raw'
 output_heats = 'output/heatmaps'
 
+def check_file(file_path):
+    edf_path = file_path
+    try: pyedflib.EdfReader(edf_path)
+    except: print(f"Error reading EDF file: {file_path}")
+
+    
 def edf_to_arr(edf_path):
     f = pyedflib.EdfReader(edf_path)
     n = f.signals_in_file
@@ -22,6 +31,16 @@ def edf_to_arr(edf_path):
     signal_labels = signal_labels[:-3]
 
     return sigbufs, signal_labels
+
+def preprocessing(eeg_data, lowcut=4, highcut=45, samplingrate= 250, order=4, ):
+  #detrend first
+  eeg_detrended = detrend(eeg_data, axis=-1, type='linear')
+  #bandpass filter as griffith did
+  b, a = butter(order, [lowcut / (0.5 * samplingrate), highcut / (0.5 * samplingrate)], btype='band')
+  eeg_bandfiltered = filtfilt(b, a, eeg_detrended, axis=-1)
+  #standardize
+  eeg_normalized = StandardScaler().fit_transform(eeg_bandfiltered.T).T
+  return eeg_normalized
 
 def dmd_decomposition(signal, n_modes=10):
 
@@ -78,7 +97,14 @@ if __name__ == "__main__":
     os.makedirs(output_heats, exist_ok=True)
     for file in os.listdir(data_path):
         if file.endswith('.edf'):
-            edf_path = os.path.join(data_path, file)
-            signal, labels = edf_to_arr(edf_path)
-            decomposition = dmd_decomposition(signal)
-            create_heatmap_decomposition(decomposition, os.path.splitext(file)[0])
+            edf_path = os.path.join(data_path, file) 
+            try: pyedflib.EdfReader(edf_path)
+            except: print(f"Error reading EDF file: {edf_path}")
+            else:
+                signal, labels = edf_to_arr(edf_path)   # Read the EDF file and convert to array
+                signal = preprocessing(signal)          # Preprocess the signal
+                # Decompose the signal using DMD and save the resulting heatmap to .png and .csv files
+                decomposition = dmd_decomposition(signal)
+                create_heatmap_decomposition(decomposition, os.path.splitext(file)[0])
+                print(f"Processed {file} and saved heatmap and CSV files.")
+            
