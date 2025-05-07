@@ -18,7 +18,6 @@ def check_file(file_path):
     edf_path = file_path
     try: pyedflib.EdfReader(edf_path)
     except: print(f"Error reading EDF file: {file_path}")
-
     
 def edf_to_arr(edf_path):
     f = pyedflib.EdfReader(edf_path)
@@ -28,7 +27,6 @@ def edf_to_arr(edf_path):
     for i in np.arange(n):
         sigbufs[i, :] = f.readSignal(i)
     sigbufs = sigbufs[:32,:]
-    signal_labels = signal_labels[:32]
     f.close()
     return sigbufs, signal_labels
 
@@ -106,4 +104,5 @@ if __name__ == "__main__":
                 # Decompose the signal using DMD and save the resulting heatmap to .png and .csv files
                 decomposition = dmd_decomposition(signal)
                 create_heatmap_decomposition(decomposition, os.path.splitext(file)[0])
+
             
