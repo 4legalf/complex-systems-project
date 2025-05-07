@@ -27,9 +27,10 @@ def edf_to_arr(edf_path):
     sigbufs = np.zeros((n, f.getNSamples()[0]))
     for i in np.arange(n):
         sigbufs[i, :] = f.readSignal(i)
-    sigbufs = sigbufs[:-3,:]
-    signal_labels = signal_labels[:-3]
-
+    sigbufs = sigbufs[:32,:]
+    signal_labels = signal_labels[:32]
+    print(f"Signal labels: {signal_labels}")
+    f.close()
     return sigbufs, signal_labels
 
 def preprocessing(eeg_data, lowcut=4, highcut=45, samplingrate= 250, order=4, ):
@@ -106,5 +107,4 @@ if __name__ == "__main__":
                 # Decompose the signal using DMD and save the resulting heatmap to .png and .csv files
                 decomposition = dmd_decomposition(signal)
                 create_heatmap_decomposition(decomposition, os.path.splitext(file)[0])
-                print(f"Processed {file} and saved heatmap and CSV files.")
             
