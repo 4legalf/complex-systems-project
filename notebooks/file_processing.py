@@ -63,10 +63,15 @@ def dmd_decomposition(signal, n_modes=10):
 def create_heatmap_decomposition(decomposition, filename):
     dmd_modes, frequencies, damping_ratios = decomposition
 
-    Phi_phys_unique_norm_real = np.real(dmd_modes)  # Real part of normalized DMD modes
-    Phi_phys_unique_norm_imag = np.imag(dmd_modes)  # Imaginary part of normalized DMD modes
-    zeta_map = damping_ratios  # Normalized damping ratios
-    fn_map = frequencies    # Normalized frequencies
+    def normalize(x): return (x-np.min(x))/(np.max(x)-np.min(x))
+
+    Phi_phys_unique_real = np.real(dmd_modes)  # Real part of normalized DMD modes
+    Phi_phys_unique_imag = np.imag(dmd_modes)  # Imaginary part of normalized DMD modes
+
+    Phi_phys_unique_norm_real = normalize(Phi_phys_unique_real) # Normalize real part
+    Phi_phys_unique_norm_imag = normalize(Phi_phys_unique_imag) # Normalize imaginary part
+    zeta_map = normalize(damping_ratios)  # Normalized damping ratios
+    fn_map = normalize(frequencies)    # Normalized frequencies
 
     # Combine data for heatmap
     heatmap_data = np.vstack([
