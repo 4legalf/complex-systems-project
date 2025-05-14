@@ -1,0 +1,54 @@
+ID,S1 EEG File,S2 EEG File,Sex (M/F),Age,Treatment Code,Ethnicity,Handedness (R/L),Smoker (Y/N),Education,MDD Type,HAM-D-17 Baseline,MADRS Baseline,HAM-D-17 Week1,MADRS Week1,HAM-D-17 Week12,MADRS Week12,H17ChngW1B%,MadChngW1B%,H17ChngW12B%,MadChngW12B%,Responders
+DD01,x,x,M,52,A,Caucasian,41%,Y,12 yrs,Melancholic,24,36,20,34,19,29,-16.67,-5.56,-20.83,-19.44,Non-responders
+DD02,x,x,F,57,A,Caucasian,100%,N,16 yrs,Melancholic,31,29,16,25,8,10,-48.39,-13.79,-74.19,-65.52,Responders
+DD03,x,x,F,21,A,Caucasian,66.60%,N,13 yrs ,Atypical,18,28,11,12,7,12,-38.89,-57.14,-61.11,-57.14,Responders
+DD04,x,x,F,53,C,Caucasian,66.60%,N,14 yrs ,Atypical,22,27,13,19,22,23,-40.91,-29.63,0.00,-14.81,Non-responders
+DD05,x,x,M,46,C,Caucasian,100%,Y,17 yrs ,Melancholic,18,28,30,35,26,42,66.67,25.00,44.44,50.00,Non-responders
+DD06,x,x,M,33,A,Caucasian,100%,Y,16 yrs,"Neither Melancholic, Atypical, Nor catatonic",15,31,17,31,6,2,13.33,0.00,-60.00,-93.55,Responders
+DD07,x,x,M,26,C,Caucasian,100%,N,13 yrs ,Atypical,20,31,16,34,6,6,-20.00,9.68,-70.00,-80.65,Responders
+DD08,x,x,M,36,A,Caucasian,72.70%,N,13 yrs ,"Neither Melancholic, Atypical, Nor catatonic",14,30,13,25,10,13,-7.14,-16.67,-28.57,-56.67,Responders
+DD09,x,,M,,B,Caucasian,100%,Y,17 yrs ,Melancholic,27,42,41,45,29,40,51.85,7.14,7.41,-4.76,Non-responders
+DD10,x,x,M,23,A,Caucasian,100%,N,16 yrs ,"Neither Melancholic, Atypical, Nor catatonic",17,30,9,11,1,1,-47.06,-63.33,-94.12,-96.67,Responders
+DD11,x,x,F,37,C,Caucasian,100%,N,15 yrs,"Neither Melancholic, Atypical, Nor catatonic",22,31,8,21,17,18,-63.64,-32.26,-22.73,-41.94,Non-responders
+DD12,x,x,M,56,B,Caucasian,89.50%,Y,13 yrs ,Atypical,11,23,10,18,1,0,-9.09,-21.74,-90.91,-100.00,Responders
+DD13,x,x,F,27,C,Caucasian,41.70%,N,14 yrs,Melancholic,21,38,16,28,8,9,-23.81,-26.32,-61.90,-76.32,Responders
+DD14,x,x,F,36,B,Caucasian,57.14%,N,16 yrs ,Atypical,21,36,23,39,24,38,9.52,8.33,14.29,5.56,Non-responders
+DD15,x,x,M,50,A,Caucasian,-100%,N,19 yrs,"Neither Melancholic, Atypical, Nor catatonic",20,31,22,34,16,31,10.00,9.68,-20.00,0.00,Non-responders
+DD16,x,x,M,21,A,Caucasian,100%,N,14 yrs,Atypical,21,22,7,15,0,0,-66.67,-31.82,-100.00,-100.00,Responders
+DD17,x,x,F,59,C,Caucasian,89.47%,N,19 yrs,Atypical,19,24,19,30,17,26,0.00,25.00,-10.53,8.33,Non-responders
+DD18,x,x,F,46,A,Caucasian,100%,N,17 yrs ,Melancholic,12,23,16,24,4,4,33.33,4.35,-66.67,-82.61,Responders
+DD19,x,,F,57,B,Caucasian,-50%,Y,14 yrs ,Melancholic,24,31,18,26,Discontinued/Drop Out (Wk2),,,,,,
+DD20,x,x,M,20,C,Caucasian,88.23%,N,15 yrs ,Melancholic,19,32,20,32,16,23,5.26,0.00,-15.79,-28.13,Non-responders
+DD21,x,x,F,55,B,Caucasian,33.33%,N,16 yrs,Melancholic,27,35,22,32,10,18,-18.52,-11.11,-62.96,-48.57,Non-responders
+DD22,x,x,M,33,B,Caucasian,100%,N,18 yrs ,Atypical,23,35,26,37,22,32,13.04,5.71,-4.35,-8.57,Non-responders
+DD23,x,x,M,39,C,Caucasian,87.50%,N,18 yrs,Melancholic,34,42,29,40,Discontinued/Drop Out (Wk4),,,,,,
+DD24,x,x,F,42,B,Caucasian,-17.64%,N,14 yrs,Atypical,19,29,17,29,15,21,-10.53,0.00,-21.05,-27.59,Non-responders
+DD25,x,x,M,28,A,Caucasian,50%,N,19 yrs,Atypical,21,26,11,12,14,21,-47.62,-53.85,-33.33,-19.23,Non-responders
+DD26,x,x,F,55,C,Caucasian,40%,N,18 yrs ,Melancholic,27,18,29,32,17,17,7.41,77.78,-37.04,-5.56,Non-responders
+DD27,x,x,M,26,B,Caucasian,100%,N,13 yrs,Atypical,18,29,23,14,2,10,27.78,-51.72,-88.89,-65.52,Responders
+DD28,x,x,F,42,A,Caucasian,66.66%,N,17 yrs ,Atypical,26,34,13,27,4,11,-50.00,-20.59,-84.62,-67.65,Responders
+DD29,x,x,M,36,C,African descent,100%,N,18 yrs ,Melancholic,20,34,23,32,20,35,15.00,-5.88,0.00,2.94,Non-responders
+DD30,x,x,M,32,C,Asian descent,90.47%,Former,16 yrs ,Melancholic,16,25,13,21,0,0,-18.75,-16.00,-100.00,-100.00,Responders
+DD31,x,x,F,44,B,Caucasian,84.61%,Y,11 yrs,Melancholic,30,35,28,35,11,12,-6.67,0.00,-63.33,-65.71,Responders
+DD32,x,x,F,57,C,Caucasian,83.33%,Y,18 yrs,Melancholic,22,35,13,20,9,16,-40.91,-42.86,-59.09,-54.29,Responders
+DD33,x,x,F,31,A,Caucasian,30.43%,Y,16 yrs,Atypical,19,29,8,12,3,5,-57.89,-58.62,-84.21,-82.76,Responders
+DD34,x,x,F,36,C,Caucasian,86.66%,N,13 yrs,Melancholic,26,37,18,25,1,0,-30.77,-32.43,-96.15,-100.00,Responders
+DD35,x,x,M,40,B,Asian descent,100%,Y,19 yrs,"Neither Melancholic, Atypical, Nor catatonic",16,30,9,16,5,1,-43.75,-46.67,-68.75,-96.67,Responders
+DD36,x,x,M,26,A,Caucasian,100%,N,17 yrs,Melancholic,20,28,7,12,1,0,-65.00,-57.14,-95.00,-100.00,Responders
+DD37,x,x,F,47,A,Asian descent,100%,N,16 yrs,"Neither Melancholic, Atypical, Nor catatonic",15,25,5,11,4,10,-66.67,-56.00,-73.33,-60.00,Responders
+DD38,x,x,F,45,C,Caucasian,57.14,N,14 yrs,"Neither Melancholic, Atypical, Nor catatonic",18,27,19,30,6,8,5.56,11.11,-66.67,-70.37,Responders
+DD39,x,x,M,60,B,Caucasian,100%,N,16 yrs,Melancholic,20,40,14,27,18,30,-30.00,-32.50,-10.00,-25.00,Non-responders
+DD40,x,x,F,52,C,Caucasian,69.23%,N,17 yrs,Melancholic,17,23,9,15,11,14,-47.06,-34.78,-35.29,-39.13,Non-responders
+DD41,x,x,F,41,A,Caucasian,100%,N,14 yrs ,Melancholic,23,34,22,35,30,39,-4.35,2.94,30.43,14.71,Non-responders
+DD42,x,x,F,30,B,South Asian descent,82.61,N,17 yrs ,Melancholic,21,26,15,22,6,10,-28.57,-15.38,-71.43,-61.54,Responders
+DD43,x,x,F,37,C,Caucasian,83.33%,N,19 yrs ,Melancholic,34,37,23,29,2,0,-32.35,-21.62,-94.12,-100.00,Responders
+DD44,x,x,M,45,B,Caucasian,83.33%,N,21 yrs,"Neither Melancholic, Atypical, Nor catatonic",15,31,20,38,8,12,33.33,22.58,-46.67,-61.29,Responders
+DD45,x,,F,40,B,Caucasian,100.00%,N,17 yrs,Melancholic,29,36,23,27,14,21,-20.69,-25.00,-51.72,-41.67,Non-responders
+DD46,x,x,M,31,C,Caucasian,-61.90%,N,20 yrs,"Neither Melancholic, Atypical, Nor catatonic",16,25,12,24,4,6,-25.00,-4.00,-75.00,-76.00,Responders
+DD47,x,x,F,63,C,Caucasian,-100.00%,N,12 yrs,Melancholic,20,31,28,20,11,17,40.00,-35.48,-45.00,-45.16,Non-responders
+DD48,x,x,F,37,A,Caucasian,89.47%,N,16 yrs ,"Neither Melancholic, Atypical, Nor catatonic",24,41,25,39,30,40,4.17,-4.88,25.00,-2.44,Non-responders
+DD49,x,x,F,19,A,Caucasian,75.00%,N,12 yrs ,Atypical,15,27,18,28,7,10,20.00,3.70,-53.33,-62.96,Responders
+DD50,x,x,M,48,B,Caucasian,100.00%,N,20 yrs,Melancholic,17,31,21,34,12,22,23.53,9.68,-29.41,-29.03,Non-responders
+DD51,x,x,M,42,B,Caucasian,83.33%,N,15 yrs ,Atypical,16,27,19,30,9,19,18.75,11.11,-43.75,-29.63,Non-responders
+DD52,x,x,F,30,B,Caucasian,58.33%,N,15 yrs,Atypical,25,35,20,27,0,0,-20.00,-22.86,-100.00,-100.00,Responders
+DD53,x,,F,47,C,Caucasian,100%,N,16 yrs,"Neither Melancholic, Atypical, Nor catatonic",23,30,23,34,17,28,0.00,13.33,-26.09,-6.67,Non-responders
