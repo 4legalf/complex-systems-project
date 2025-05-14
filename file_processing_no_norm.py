@@ -79,12 +79,12 @@ def create_heatmap_decomposition(decomposition, filename):
 
     # Combine data for heatmap
     heatmap_data = np.vstack([
-        zeta_map,
-        fn_map,
-        Phi_phys_unique_norm_real,
-        Phi_phys_unique_norm_imag
+        damping_ratios,
+        frequencies,
+        Phi_phys_unique_real,
+        Phi_phys_unique_imag
     ])
-
+    '''
     # Create heatmap
     plt.figure(figsize=(10, 8))
     sns.heatmap(heatmap_data, cmap='seismic', cbar=False, xticklabels=False, yticklabels=False)
@@ -93,7 +93,7 @@ def create_heatmap_decomposition(decomposition, filename):
     output_filename = f'output/heatmaps/{filename}.png'
     plt.savefig(output_filename, bbox_inches='tight')
     plt.close()
-
+    '''
     # Save heatmap data to a CSV file
     csv_output_filename = f'output/raw/{filename}.csv'
     np.savetxt(csv_output_filename, heatmap_data, delimiter=",")
@@ -113,3 +113,4 @@ if __name__ == "__main__":
                 # Decompose the signal using DMD and save the resulting heatmap to .png and .csv files
                 decomposition = dmd_decomposition(signal)
                 create_heatmap_decomposition(decomposition, os.path.splitext(file)[0])
+            
